@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Самостоятельное 2. Каталог из data.js</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Kreativa Shop</a>
+        <nav class="menu">
+            <a href="#catalog">Каталог</a>
+            <a href="#cart">Корзина</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="title">Каталог</h1>
+
+        <h2>Версия A: createElement + DocumentFragment</h2>
+        <ul id="listA" class="products"></ul>
+        <p class="note">Название опасного товара показано как обычный текст.</p>
+
+        <h2>Версия B: шаблонные строки + innerHTML</h2>
+        <ul id="listB" class="products"></ul>
+        <p class="note">Здесь сработает onerror и появится alert(1): это XSS.</p>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/self-2.js"></script>
+</body>
+</html>
